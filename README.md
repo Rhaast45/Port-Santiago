@@ -19,8 +19,6 @@ it-portfolioV2/
 ├── index.html           # Main landing page
 ├── profile.html         # Profile/about page
 ├── projects.html        # Projects showcase page
-├── css/
-│   └── style.css        # Shared styling
 ├── assets/
 │   ├── images/
 │   └── documents/

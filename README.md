@@ -37,23 +37,11 @@ it-portfolioV2/
 
 ## How to Run
 
-Enter this link directly in a browser:
+Click this link directly or type it in a browser:
 
-(https://rhaast45.github.io/Port-Santiago)
+[https://rhaast45.github.io/Port-Santiago]
 
-1. Open `[index.html](https://rhaast45.github.io/Port-Santiago)` directly in a browser.
-2. Or serve the folder locally:
 
-```bash
-cd "C:\Users\admin\OneDrive\Documents\Project\it-portfolioV2"
-python -m http.server 8000
-```
-
-Then open:
-
-```text
-http://localhost:8000
-```
 
 ## Notes
 

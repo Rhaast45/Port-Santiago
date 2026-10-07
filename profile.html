@@ -571,6 +571,48 @@
       white-space: nowrap;
     }
 
+    .resume-details {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: var(--sp-40);
+      padding: var(--sp-40) var(--sp-72);
+      background-color: var(--color-surface);
+      border-bottom: 1px solid var(--color-border-subtle);
+    }
+
+    .resume-details__column {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: var(--sp-20);
+      min-width: 0;
+    }
+
+    .resume-details__title {
+      font-size: var(--fs-22);
+      font-weight: 400;
+      color: var(--color-text-primary2);
+    }
+
+    .resume-details__dates {
+      font-size: var(--fs-10);
+      font-weight: 600;
+      color: var(--color-text-muted);
+    }
+
+    .resume-details__items {
+      display: flex;
+      flex-direction: column;
+      gap: var(--sp-12);
+    }
+
+    .resume-details__items p {
+      font-size: var(--fs-16);
+      font-weight: 400;
+      color: var(--color-text-body);
+      line-height: 1.5;
+    }
+
     /* ============================================================
        TECHNICAL SKILLS
     ============================================================ */
@@ -904,6 +946,7 @@
 
       .resume-section { padding: var(--sp-48) var(--sp-32); }
       .resume-toolbar { flex-direction: column; align-items: flex-start; gap: var(--sp-16); }
+      .resume-details { padding: var(--sp-40) var(--sp-32); }
 
       .skills-section { padding: var(--sp-48) var(--sp-32); }
       .skill-row { flex-wrap: wrap; }
@@ -941,6 +984,12 @@
 
       .resume-section { padding: var(--sp-32) var(--sp-16); }
       .resume-toolbar__filename { font-size: var(--fs-12); }
+      .resume-details {
+        grid-template-columns: 1fr;
+        gap: var(--sp-32);
+        padding: var(--sp-32) var(--sp-16);
+      }
+      .resume-details__column { gap: var(--sp-12); }
 
       .skills-section { padding: var(--sp-32) var(--sp-16); }
       .skill-row { flex-direction: column; }
@@ -1074,7 +1123,7 @@
       .status-bar__group:first-child {
         grid-column: 1;
         grid-row: 1;
-        gap: 6px;
+        gap: 23px;
         min-width: 0;
       }
 
@@ -1258,6 +1307,35 @@
           </a>
         </div>
       </div>
+    </section>
+
+    <section class="resume-details" aria-label="Education, work experience, and clients">
+      <article class="resume-details__column">
+        <h2 class="resume-details__title">Education</h2>
+        <p class="resume-details__dates">[June 22, 2023] - [March 23, 2027]</p>
+        <div class="resume-details__items">
+          <p>[Datamex College of Saint Adeline]</p>
+          <p>[Paranaque City, Metro Manila]</p>
+        </div>
+      </article>
+
+      <article class="resume-details__column">
+        <h2 class="resume-details__title">Work experience</h2>
+        <p class="resume-details__dates">[May 5, 2024] - [May 15, 2026]</p>
+        <div class="resume-details__items">
+          <p>[Talent lyft]</p>
+          <p>[Maintenance]</p>
+        </div>
+      </article>
+
+      <article class="resume-details__column">
+        <h2 class="resume-details__title">Clients</h2>
+        <div class="resume-details__items">
+          <p>[Rudolf Eric Mateo]</p>
+          <p>[John Earl Campos]</p>
+          <p>[Randy Villanueva]</p>
+        </div>
+      </article>
     </section>
 
     <!-- ============================================================

@@ -44,9 +44,9 @@ Click this link directly or type it in a browser:
 ## Notes
 
 - No build step or package installation is required.
-- The design is fully front-end and can be customized by editing the HTML and CSS files.
+- The design is fully front-end and can be customized by editing the HTML.
 - Assets used in the portfolio are stored in the `assets/` folder.
 
 ## Author
 
-Operator Rhaast
+Operator Rhaast (Michael B "GOAT" Ortinero)

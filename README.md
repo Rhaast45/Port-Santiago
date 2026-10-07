@@ -1,4 +1,4 @@
-# Operator Rhaast Portfolio
+# Portfolio for Michael Ortinero
 
 A personal portfolio website built as a modern one-page static site to showcase professional profile, featured projects, and contact information.
 
@@ -37,9 +37,11 @@ it-portfolioV2/
 
 ## How to Run
 
-Because this is a static website, you can run it in either of these ways:
+Enter this link directly in a browser:
 
-1. Open `index.html` directly in a browser.
+(https://rhaast45.github.io/Port-Santiago)
+
+1. Open `[index.html](https://rhaast45.github.io/Port-Santiago)` directly in a browser.
 2. Or serve the folder locally:
 
 ```bash

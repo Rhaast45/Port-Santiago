@@ -644,6 +644,85 @@
     }
 
     /* ============================================================
+       AVAILABILITY & FAQ
+    ============================================================ */
+    .availability {
+      display: flex;
+      flex-direction: column;
+      gap: var(--sp-24);
+      padding: var(--sp-72);
+      background-color: var(--color-surface);
+      border-top: 1px solid var(--color-border-subtle);
+    }
+
+    .availability__title {
+      font-size: var(--fs-34);
+      font-weight: 700;
+      color: var(--color-text-primary);
+      line-height: 1.15;
+    }
+
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: var(--sp-12);
+    }
+
+    .faq-item {
+      overflow: hidden;
+      background-color: var(--color-bg);
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+    }
+
+    .faq-item[open] {
+      border-bottom: 2px solid var(--color-accent);
+    }
+
+    .faq-item__question {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--sp-16);
+      padding: var(--sp-16) var(--sp-20);
+      color: var(--color-text-primary);
+      font-size: var(--fs-16);
+      font-weight: 700;
+      cursor: pointer;
+      list-style: none;
+    }
+
+    .faq-item__question::-webkit-details-marker { display: none; }
+
+    .faq-item__question::after {
+      width: 9px;
+      height: 9px;
+      border-top: 2px solid var(--color-accent);
+      border-right: 2px solid var(--color-accent);
+      content: "";
+      flex: 0 0 auto;
+      transform: rotate(135deg);
+      transition: transform 0.2s ease;
+    }
+
+    .faq-item[open] .faq-item__question::after {
+      transform: rotate(-45deg);
+    }
+
+    .faq-item__question:focus-visible {
+      outline: 2px solid var(--color-accent);
+      outline-offset: -3px;
+    }
+
+    .faq-item__answer {
+      padding: var(--sp-12) var(--sp-20) var(--sp-20);
+      border-top: 1px solid var(--color-border);
+      color: var(--color-text-secondary);
+      font-size: var(--fs-16);
+      line-height: 1.55;
+    }
+
+    /* ============================================================
        FOOTER
     ============================================================ */
     footer {
@@ -803,6 +882,8 @@
         padding: var(--sp-32);
       }
 
+      .availability { padding: var(--sp-32); }
+
       .project-grid {
         flex-direction: column;
       }
@@ -848,7 +929,7 @@
       .status-bar__group:first-child {
         grid-column: 1;
         grid-row: 1;
-        gap: 6px;
+        gap: 23px;
         min-width: 0;
       }
 
@@ -925,6 +1006,17 @@
         padding: var(--sp-16);
         gap: var(--sp-24);
       }
+
+      .availability {
+        padding: var(--sp-32) var(--sp-16);
+        gap: var(--sp-20);
+      }
+
+      .availability__title { font-size: 26px; }
+
+      .faq-item__question { padding: var(--sp-16); }
+
+      .faq-item__answer { padding: var(--sp-12) var(--sp-16) var(--sp-16); }
 
       .section-heading__title {
         font-size: 26px;
@@ -1176,6 +1268,24 @@
           </div>
         </article>
 
+      </div>
+    </section>
+
+    <section class="availability" aria-labelledby="availability-title">
+      <h2 class="availability__title" id="availability-title">Availability &amp; FAQ</h2>
+      <div class="faq-list">
+        <details class="faq-item" open>
+          <summary class="faq-item__question">Are you open to freelance work?</summary>
+          <p class="faq-item__answer">Yes. I'm booking projects starting next month, from landing pages to full web apps.</p>
+        </details>
+        <details class="faq-item" open>
+          <summary class="faq-item__question">How much does a project cost?</summary>
+          <p class="faq-item__answer">Most projects are a fixed price agreed after a short call. Small sites start around €1,500.</p>
+        </details>
+        <details class="faq-item" open>
+          <summary class="faq-item__question">What's your usual timeline?</summary>
+          <p class="faq-item__answer">A typical portfolio or marketing site takes two to four weeks, depending on content.</p>
+        </details>
       </div>
     </section>
   </main>

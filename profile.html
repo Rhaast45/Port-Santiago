@@ -516,7 +516,6 @@
       background-color: var(--color-bg);
       border: 1px solid var(--color-border);
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
       width: 42px;
@@ -526,11 +525,10 @@
       overflow: hidden;
     }
 
-    .resume-toolbar__pdf-icon span {
-      font-size: var(--fs-8);
-      font-weight: 600;
-      color: var(--color-text-muted);
-      text-align: center;
+    .resume-toolbar__pdf-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
     }
 
     .resume-toolbar__meta {
@@ -1076,7 +1074,7 @@
       .status-bar__group:first-child {
         grid-column: 1;
         grid-row: 1;
-        gap: 6px;
+        gap: 23px;
         min-width: 0;
       }
 
@@ -1248,11 +1246,11 @@
         <div class="resume-toolbar">
           <div class="resume-toolbar__identity">
             <div class="resume-toolbar__pdf-icon" aria-hidden="true">
-              <span>[PDF Icon]</span>
+              <img src="assets/images/profile/pdf-icon.png" alt="" />
             </div>
             <div class="resume-toolbar__meta">
               <span class="resume-toolbar__filename">Michael_Ortinero_Resume.pdf</span>
-              <span class="resume-toolbar__info">2 pages • Updated September 2026</span>
+              <span class="resume-toolbar__info">1 pages • Updated October 2026</span>
             </div>
           </div>
           <a class="resume-toolbar__btn" href="assets/documents/Michael_Ortinero_Resume.pdf" download="Michael_Ortinero_Resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="Download resume PDF">

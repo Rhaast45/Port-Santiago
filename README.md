@@ -29,7 +29,6 @@ it-portfolioV2/
 ## Technologies Used
 
 - HTML5
-- CSS3
 - Google Fonts
 - Static web assets
 
